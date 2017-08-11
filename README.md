@@ -9,8 +9,10 @@ Fluid simulations are CPU-intensive operations. This is why Liquidfun is impleme
 
 ## Installation
 Adapted from [here](https://github.com/finnstr/gdx-liquidfun-extension/wiki/Setup)
-These instructions only considers the desktop (Linux 32 bits & 64 bits) and android platforms.
-Please refer to TODO for other platforms.
+
+These instructions only consider the desktop (Linux 32 bits & 64 bits) and android platforms.
+
+Please refer to the [build](#build) for other platforms.
 
 ### Step1: removing Box2D
 This extension already includes all the code for Box2D. So if you are currently using Box2D in your project you have to remove this dependencies to keep everything clean. If you're not using Box2D you can skip this and continue with the second step.
@@ -48,6 +50,9 @@ compile fileTree(dir: 'libs', include: '*.so')
 **Android Dependency:**
 ```groovy
 compile fileTree(dir: '../core/libs', include: '*.jar')
+compile fileTree(dir: 'libs', include: '*.so')
+```
+
 ### Step 3: Adding the files
 Finaly, you need to add the actual files. You can find them inside the `libs` folder of this repository.
 Place the files as follows (create the `libs` folders if needed):
