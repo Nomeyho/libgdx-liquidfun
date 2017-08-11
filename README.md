@@ -12,10 +12,10 @@ Adapted from [here](https://github.com/finnstr/gdx-liquidfun-extension/wiki/Setu
 
 These instructions only consider the desktop (Linux 32 bits & 64 bits) and android platforms.
 
-Please refer to the [build](#build) for other platforms.
+Please refer to the [build](#build) section for other platforms.
 
 ### Step1: removing Box2D
-This extension already includes all the code for Box2D. So if you are currently using Box2D in your project you have to remove this dependencies to keep everything clean. If you're not using Box2D you can skip this and continue with the second step.
+This extension already includes all the code for Box2D. So if you are currently using Box2D in your project you have to remove it to keep everything clean. If you're not using Box2D you can skip this and continue with the second step.
 
 To remove the Box2D dependecies you have to open up the `build.gradle` file in your root directory. Here are the dependencies you have to remove:
 
@@ -74,7 +74,7 @@ Place the files as follows (create the `libs` folders if needed):
 NB: you can also remove the `libgdx-box2d.so` files from those directories
 
 ### Step 4: Testing
-Rebuild your project and try the following code:
+Rebuild your project and try the code: `demo/Demo.java`
 
 ## More platforms
 ### HTML
